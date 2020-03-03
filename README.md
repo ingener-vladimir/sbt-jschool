@@ -1,2 +1,2 @@
 # sbt-jschool
-The practic exersises from Java-School
+The practic exerсises from Java-School
