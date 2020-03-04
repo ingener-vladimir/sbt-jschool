@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="82520674-e0cc-4327-920e-7f942c11fd64" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YegxLdWKpd1Qdtuqe2ouQ7qXix" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="com.sbt.jschool.lesson1.PersonTest" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../tetsTaskNordClan/pom.xml" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.4091981" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.sbt.jschool.lesson1" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="com.sbt.jschool.lesson1.PersonTest" />
+      <recent name="org.junit.Test" />
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.sbt.jschool.lesson1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sbt.jschool.lesson1.Main" />
+      <module name="lesson1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson1" />
+      <option name="PACKAGE_NAME" value="com.sbt.jschool.lesson1" />
+      <option name="MAIN_CLASS_NAME" value="com.sbt.jschool.lesson1.PersonTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest.divorce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson1" />
+      <option name="PACKAGE_NAME" value="com.sbt.jschool.lesson1" />
+      <option name="MAIN_CLASS_NAME" value="com.sbt.jschool.lesson1.PersonTest" />
+      <option name="METHOD_NAME" value="divorce" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest.marry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson1" />
+      <option name="PACKAGE_NAME" value="com.sbt.jschool.lesson1" />
+      <option name="MAIN_CLASS_NAME" value="com.sbt.jschool.lesson1.PersonTest" />
+      <option name="METHOD_NAME" value="marry" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest.testException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson1" />
+      <option name="PACKAGE_NAME" value="com.sbt.jschool.lesson1" />
+      <option name="MAIN_CLASS_NAME" value="com.sbt.jschool.lesson1.PersonTest" />
+      <option name="METHOD_NAME" value="testException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.PersonTest.marry" />
+        <item itemvalue="JUnit.PersonTest.testException" />
+        <item itemvalue="JUnit.PersonTest.divorce" />
+        <item itemvalue="JUnit.PersonTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="582" y="257" key="#Custom_Plugin_Repositories" timestamp="1583314316641">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="582" y="257" key="#Custom_Plugin_Repositories/0.0.1680.1020@0.0.1680.1020" timestamp="1583314316641" />
+    <state x="611" y="227" key="#HTTP_Proxy" timestamp="1583314311571">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="611" y="227" key="#HTTP_Proxy/0.0.1680.1020@0.0.1680.1020" timestamp="1583314311571" />
+    <state x="413" y="57" key="#Java" timestamp="1583314372745">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="413" y="57" key="#Java/0.0.1680.1020@0.0.1680.1020" timestamp="1583314372745" />
+    <state x="324" y="88" key="#Project_Structure" timestamp="1583312566262">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="324" y="88" key="#Project_Structure/0.0.1680.1020@0.0.1680.1020" timestamp="1583312566262" />
+    <state x="299" y="166" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583311494462">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="299" y="166" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1583311494462" />
+    <state x="475" y="219" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1583311869865">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="475" y="219" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1583311869865" />
+    <state x="646" y="235" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1583313970450">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="646" y="235" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1583313970450" />
+    <state x="645" y="243" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1583312733686">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="645" y="243" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1583312733686" />
+    <state x="687" y="305" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1583309133669">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="687" y="305" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1583309133669" />
+    <state x="418" y="136" key="#com.sbt.jschool.lesson1_in_lesson1" timestamp="1583313981497">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="418" y="136" key="#com.sbt.jschool.lesson1_in_lesson1/0.0.1680.1020@0.0.1680.1020" timestamp="1583313981497" />
+    <state x="100" y="100" width="1480" height="820" key="DiffContextDialog" timestamp="1583311745204">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="100" y="100" width="1480" height="820" key="DiffContextDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1583311745204" />
+    <state x="624" y="266" key="FileChooserDialogImpl" timestamp="1583315159791">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="624" y="266" key="FileChooserDialogImpl/0.0.1680.1020@0.0.1680.1020" timestamp="1583315159791" />
+    <state width="1634" height="267" key="GridCell.Tab.0.bottom" timestamp="1583316221183">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state width="1634" height="267" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1583316221183" />
+    <state width="1634" height="267" key="GridCell.Tab.0.center" timestamp="1583316221180">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state width="1634" height="267" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1583316221180" />
+    <state width="1634" height="267" key="GridCell.Tab.0.left" timestamp="1583316221179">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state width="1634" height="267" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1583316221179" />
+    <state width="1634" height="267" key="GridCell.Tab.0.right" timestamp="1583316221181">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state width="1634" height="267" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1583316221181" />
+    <state width="1634" height="330" key="GridCell.Tab.1.bottom" timestamp="1583315761789">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state width="1634" height="330" key="GridCell.Tab.1.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1583315761789" />
+    <state width="1634" height="330" key="GridCell.Tab.1.center" timestamp="1583315761789">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state width="1634" height="330" key="GridCell.Tab.1.center/0.0.1680.1020@0.0.1680.1020" timestamp="1583315761789" />
+    <state width="1634" height="330" key="GridCell.Tab.1.left" timestamp="1583315761789">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state width="1634" height="330" key="GridCell.Tab.1.left/0.0.1680.1020@0.0.1680.1020" timestamp="1583315761789" />
+    <state width="1634" height="330" key="GridCell.Tab.1.right" timestamp="1583315761789">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state width="1634" height="330" key="GridCell.Tab.1.right/0.0.1680.1020@0.0.1680.1020" timestamp="1583315761789" />
+    <state x="373" y="168" width="932" height="687" key="Maven.ArtifactSearchDialog" timestamp="1583315590969">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="373" y="168" width="932" height="687" key="Maven.ArtifactSearchDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1583315590969" />
+    <state x="337" y="145" width="1007" height="733" key="SettingsEditor" timestamp="1583315700018">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="337" y="145" width="1007" height="733" key="SettingsEditor/0.0.1680.1020@0.0.1680.1020" timestamp="1583315700018" />
+    <state x="596" y="355" key="cloudConfig.PluginsDialog" timestamp="1583314004360">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="596" y="355" key="cloudConfig.PluginsDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1583314004360" />
+    <state x="599" y="355" key="cloudConfig.SelfSettingsDialog" timestamp="1583314364518">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="599" y="355" key="cloudConfig.SelfSettingsDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1583314364518" />
+    <state x="557" y="461" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583309473350">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="557" y="461" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1680.1020@0.0.1680.1020" timestamp="1583309473350" />
+    <state x="356" y="121" width="1112" height="676" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1583314965386">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="356" y="121" width="1112" height="676" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1583314965386" />
+    <state x="503" y="224" key="search.everywhere.popup" timestamp="1583313237664">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="503" y="224" key="search.everywhere.popup/0.0.1680.1020@0.0.1680.1020" timestamp="1583313237664" />
+  </component>
+</project>
