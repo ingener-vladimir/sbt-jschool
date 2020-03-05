@@ -7,7 +7,7 @@ package com.sbt.jschool.lesson1;
  * @version 0.1
  */
 
-import org.junit.Assert;
+import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class PersonTest {
@@ -16,11 +16,11 @@ public class PersonTest {
     @Test
     public void marry() {
         Person person1 = new Person(false, "Mary");
-        Assert.assertTrue(person.marry(person1));
-        Assert.assertFalse(person.marry(person1));
-        Assert.assertFalse(person.marry(new Person(true, "Tobi")));
-        Assert.assertFalse(person1.marry(person));
-        Assert.assertTrue(person.marry(new Person(false, "Ann")));
+        assertTrue(person.marry(person1));
+        assertFalse(person.marry(person1));
+        assertFalse(person.marry(new Person(true, "Tobi")));
+        assertFalse(person1.marry(person));
+        assertTrue(person.marry(new Person(false, "Ann")));
     }
 
     @Test(expected = IllegalArgumentException.class)
