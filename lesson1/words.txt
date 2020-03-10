@@ -1,0 +1,6 @@
+The Java Collections Framework includes classes that implement List, Map, Queue, and Set.
+On the OCA, you saw one such class. The class ArrayList implements the interface List.
+You will learn about more of these later in this chapter. You also saw arrays on the OCA, such as int[].
+An array is not part of the Collections Framework.
+Since sorting and searching are similar between lists and arrays, both are covered on the exam.
+Furthermore, since the OCP is cumulative, you are still expected to know how to work with arrays from the OCA.

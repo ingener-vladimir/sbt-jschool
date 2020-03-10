@@ -7,7 +7,5 @@ public class Main {
         person.marry(person1);
         person.marry(person1);
         person.marry(new Person(true, "Anya"));
-
-        String str = (String)(new Integer(0) + new Long(10));
     }
 }
