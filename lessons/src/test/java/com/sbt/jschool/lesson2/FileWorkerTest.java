@@ -18,5 +18,10 @@ public class FileWorkerTest {
         assertFalse(fileWorker.writeRandomWord(-1));
         assertFalse(fileWorker.writeRandomWord(10000));
     }
+
+    @Test
+    public void differentWords(){
+        assertEquals(fileWorker.countDifferentWords(), 68);
+    }
 }
 

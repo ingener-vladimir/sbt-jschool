@@ -72,7 +72,7 @@ public class FileWorker {
         }
 
         for (Map.Entry<String, Integer> value : countRepeated.entrySet()) {
-            System.out.println("Word " + value.getKey() + " repeats " + value.getValue());
+            System.out.println("Word " + "\"" + value.getKey() + "\"" + " repeats " + value.getValue() + " times");
         }
     }
 
@@ -104,7 +104,7 @@ public class FileWorker {
             return false;
         }
 
-        System.out.println("The word is " + listWords.get(numberWord));
+        System.out.println("The word is " + "\"" + listWords.get(numberWord) + "\"");
         return true;
     }
 

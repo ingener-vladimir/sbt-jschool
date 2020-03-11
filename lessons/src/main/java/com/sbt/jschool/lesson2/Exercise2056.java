@@ -35,6 +35,8 @@ public class Exercise2056 {
     }
 
     public static void main(String[] args) {
-        Exercise2056.maxCountRepeated("Sebastian Vettel is a German Formula One racing driver currently driving for Red Bull Racing");
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+        Exercise2056.maxCountRepeated(str);
     }
 }
