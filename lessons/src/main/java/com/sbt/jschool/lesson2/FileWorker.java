@@ -64,16 +64,16 @@ public class FileWorker {
     public void countRepeated() {
         Map<String, Integer> countRepeated = new TreeMap<>();
 
-        for (String word : listWords){
+        for (String word : listWords) {
             if (!countRepeated.containsKey(word)){
                 countRepeated.put(word, 0);
             }
             countRepeated.put(word, countRepeated.get(word) + 1);
         }
 
-        for (Map.Entry<String, Integer> value : countRepeated.entrySet()) {
-            System.out.println("Word " + "\"" + value.getKey() + "\"" + " repeats " + value.getValue() + " times");
-        }
+
+        countRepeated.forEach((k, v) ->
+                System.out.println("Word " + "\"" + k + "\"" + " repeats " + v + " times"));
     }
 
     /**
@@ -122,6 +122,6 @@ public class FileWorker {
             }
         });
 
-        System.out.println(newList);
+        newList.forEach(System.out::println);
     }
 }

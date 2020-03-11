@@ -6,6 +6,7 @@ public class Exercise2056 {
     static public void maxCountRepeated(String str) {
         String[] strings = str.replaceAll("\\n", " ").toLowerCase().split(" ");
         Map<String, Integer> stringIntegerMap = new HashMap<>();
+
         for (String word : strings) {
             if (!stringIntegerMap.containsKey(word)) {
                 stringIntegerMap.put(word, 0);
@@ -29,9 +30,7 @@ public class Exercise2056 {
             }
         });
 
-        for (String value : stringList) {
-            System.out.println(value);
-        }
+        stringList.forEach(System.out::println);
     }
 
     public static void main(String[] args) {

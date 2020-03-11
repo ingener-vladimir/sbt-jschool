@@ -14,7 +14,6 @@ public class MultiSet{
     Integer[] elements;
     /** Размер массива */
     int size;
-
     /**
      * Конструктор по-умолчанию
      */
