@@ -17,8 +17,8 @@ public class FileWorker {
     /**
      * Конструктор - создание нового обработчика файла
      *
-     * @param fileName  - имя файла
-     * @exception IOException
+     * @param fileName - имя файла
+     * @throws IOException
      */
     public FileWorker(String fileName) throws IOException {
         try {
@@ -31,8 +31,8 @@ public class FileWorker {
     /**
      * Прочитать слова из файла
      *
-     * @param fileName  - имя файла
-     * @exception IOException
+     * @param fileName - имя файла
+     * @throws IOException
      */
     private void readWords(String fileName) throws IOException {
         file = new File(fileName);
@@ -65,7 +65,7 @@ public class FileWorker {
         Map<String, Integer> countRepeated = new TreeMap<>();
 
         for (String word : listWords) {
-            if (!countRepeated.containsKey(word)){
+            if (!countRepeated.containsKey(word)) {
                 countRepeated.put(word, 0);
             }
             countRepeated.put(word, countRepeated.get(word) + 1);
@@ -89,7 +89,7 @@ public class FileWorker {
      * Вывести на экран строки, номера которых задаются пользователем в произвольном порядке
      */
     public boolean writeRandomWord(int numberWord) {
-        if(listWords.isEmpty()){
+        if (listWords.isEmpty()) {
             System.out.println("List words is empty");
             return false;
         }
@@ -109,19 +109,17 @@ public class FileWorker {
     }
 
     /**
-     *  Вывести на экран список различных слов файла, отсортированный по возрастанию их длины (компаратор сначала по длине слова, потом по тексту)
+     * Вывести на экран список различных слов файла, отсортированный по возрастанию их длины (компаратор сначала по длине слова, потом по тексту)
      */
     public void sortByLength() {
-        Set<String> stringSet = new LinkedHashSet<>(listWords);
-        List newList = new ArrayList<>(stringSet);
-        Collections.sort(newList);
-        Collections.sort(newList, new Comparator<String>() {
+        Collections.sort(listWords);
+        Collections.sort(listWords, new Comparator<String>() {
             @Override
             public int compare(String t, String t1) {
                 return t.length() == t1.length() ? 0 : t.length() > t1.length() ? 2 : -1;
             }
         });
 
-        newList.forEach(System.out::println);
+        listWords.forEach(System.out::println);
     }
 }
