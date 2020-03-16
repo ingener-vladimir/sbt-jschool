@@ -1,15 +1,12 @@
 package com.sbt.jschool.lesson2;
 
-import com.sun.tools.javac.util.List;
-
 import java.io.IOException;
-import java.util.Scanner;
 
 public class Exercise1 {
 
     public static void main(String[] args) throws IOException {
         FileWorker fileWorker = new FileWorker("words.txt");
-//
+        //
 //        // Подсчитайте количество различных слов в файле
 //        System.out.println("Count different words in the file = " + fileWorker.countDifferentWords());
 //

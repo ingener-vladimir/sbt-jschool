@@ -31,6 +31,7 @@ public class Exercise2056 {
         });
 
         stringList.forEach(System.out::println);
+
     }
 
     public static void main(String[] args) {
