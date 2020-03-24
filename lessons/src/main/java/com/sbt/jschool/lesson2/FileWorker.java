@@ -11,7 +11,6 @@ import java.io.*;
 import java.util.*;
 
 public class FileWorker {
-    File file;
     List<String> listWords = new ArrayList<>();
 
     /**
@@ -21,11 +20,7 @@ public class FileWorker {
      * @throws IOException
      */
     public FileWorker(String fileName) throws IOException {
-        try {
-            readWords(fileName);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        readWords(fileName);
     }
 
     /**
@@ -34,17 +29,31 @@ public class FileWorker {
      * @param fileName - имя файла
      * @throws IOException
      */
-    private void readWords(String fileName) throws IOException {
-        file = new File(fileName);
+    private void readWords(String fileName) {
+        File file = new File(fileName);
         if (!file.exists()) {
-            file.createNewFile();
+            try {
+                file.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
-        FileReader fileReader = new FileReader(file);
-        BufferedReader bufferedReader = new BufferedReader(fileReader);
-        while (bufferedReader.ready()) {
-            String str = bufferedReader.readLine().replaceAll("[^A-Za-z0-9]", " ");
-            listWords.addAll(Arrays.asList(str.split(" ")));
+        try (FileReader fileReader = new FileReader(file);
+             BufferedReader bufferedReader = new BufferedReader(fileReader)) {
+                while (true) {
+                    try {
+                        if (bufferedReader.ready()) {
+                            String str = bufferedReader.readLine().replaceAll("[^A-Za-z0-9]", " ");
+                            listWords.addAll(Arrays.asList(str.split(" ")));
+                        } else
+                            break;
+                    } catch (IOException e) {
+                        System.out.println("Error reading from file");
+                    }
+                }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 

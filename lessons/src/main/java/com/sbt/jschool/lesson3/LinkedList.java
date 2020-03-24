@@ -227,14 +227,6 @@ public class LinkedList<T> implements Iterable<T> {
         private Node<T> previous;
 
         /**
-         * Конструктор класса без параметров
-         * @param value значение
-         */
-        public Node(T value) {
-            this.value = value;
-        }
-
-        /**
          * Конструктор класса
          * @param value значение
          * @param prev ссылка на предудущий элемент
