@@ -41,17 +41,17 @@ public class FileWorker {
 
         try (FileReader fileReader = new FileReader(file);
              BufferedReader bufferedReader = new BufferedReader(fileReader)) {
-                while (true) {
-                    try {
-                        if (bufferedReader.ready()) {
-                            String str = bufferedReader.readLine().replaceAll("[^A-Za-z0-9]", " ");
-                            listWords.addAll(Arrays.asList(str.split(" ")));
-                        } else
-                            break;
-                    } catch (IOException e) {
-                        System.out.println("Error reading from file");
-                    }
+            while (true) {
+                try {
+                    if (bufferedReader.ready()) {
+                        String str = bufferedReader.readLine().replaceAll("[^A-Za-z0-9]", " ");
+                        listWords.addAll(Arrays.asList(str.split(" ")));
+                    } else
+                        break;
+                } catch (IOException e) {
+                    System.out.println("Error reading from file");
                 }
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -125,10 +125,15 @@ public class FileWorker {
         Collections.sort(listWords, new Comparator<String>() {
             @Override
             public int compare(String t, String t1) {
-                return t.length() == t1.length() ? 0 : t.length() > t1.length() ? 2 : -1;
+                return Integer.compare(t.length(), t1.length());
             }
         });
+//        Collections.sort(listWords, (u1, u2) ->
+//                u1.length() == u2.length() ? 0 : u1.length() > u2.length() ? 2 : -1
+//        );
 
         listWords.forEach(System.out::println);
+
+
     }
 }
