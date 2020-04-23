@@ -1,4 +1,4 @@
-package com.sbt.jschool.lesson5.reflection;
+package com.sbt.jschool.lesson5;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.*;
