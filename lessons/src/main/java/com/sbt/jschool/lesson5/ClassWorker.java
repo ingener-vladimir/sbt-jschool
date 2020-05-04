@@ -37,7 +37,7 @@ public class ClassWorker {
      */
     public void printMethods() {
         System.out.println("Class's methods:");
-        Set<Method> lists = new HashSet<>(Arrays.asList(clazz.getMethods()));
+        Set<Method> lists = new TreeSet<>(Arrays.asList(clazz.getMethods()));
         for (Method method : clazz.getDeclaredMethods())
             lists.add(method);
 

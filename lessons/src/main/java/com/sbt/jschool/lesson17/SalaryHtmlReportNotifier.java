@@ -5,6 +5,8 @@ import org.springframework.mail.javamail.*;
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
+import java.io.File;
+import java.nio.file.Path;
 import java.sql.*;
 
 import java.time.LocalDate;
