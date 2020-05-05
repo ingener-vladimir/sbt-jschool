@@ -1,6 +1,10 @@
 import interfaces.Plugin;
 
 import java.io.*;
+import java.security.Key;
+import java.security.KeyPair;
+import java.security.KeyPairGenerator;
+import java.security.NoSuchAlgorithmException;
 import java.util.*;
 
 /**
@@ -23,7 +27,7 @@ public class PluginManager {
      * @param pluginRootDirectory корневой путь к плагинам
      *
      */
-    public PluginManager(String pluginRootDirectory) {
+    public PluginManager(String pluginRootDirectory, ClassLoader classLoader) {
         this._pluginRootDirectory = pluginRootDirectory;
 
         File dirs = new File(new File(pluginRootDirectory).getAbsolutePath());
@@ -37,7 +41,7 @@ public class PluginManager {
 
         _array = new ArrayList<String>(Arrays.asList(directories));
 
-        classLoader = new PluginLoader(pluginRootDirectory, ClassLoader.getSystemClassLoader());
+        classLoader = classLoader;
     }
 
     /**
@@ -73,11 +77,23 @@ public class PluginManager {
         return _array;
     }
 
-    public static void main(String[] args) {
-        final String ROOT = "./out/production/lesson7/";
+    public static void main(String[] args) throws NoSuchAlgorithmException {
+        final String ROOT = "./out/production/lesson7/plugins/";
         final String PLUGINS_DIR = "plugins" + File.separator;
+//
+//        ClassLoader classLoader = new PluginLoader(ROOT + PLUGINS_DIR, ClassLoader.getSystemClassLoader());
 
-        PluginManager pluginManager = new PluginManager(ROOT + PLUGINS_DIR);
+        KeyPairGenerator kpg = KeyPairGenerator.getInstance("RSA");
+        kpg.initialize(2048);
+        KeyPair kp = kpg.generateKeyPair();
+        Key pub = kp.getPublic();
+
+        ClassLoader encryptedClassLoader = new EncryptedClassLoader(
+                pub.getEncoded().toString(),
+                ROOT + PLUGINS_DIR,
+                ClassLoader.getSystemClassLoader());
+
+        PluginManager pluginManager = new PluginManager(ROOT + PLUGINS_DIR, encryptedClassLoader);
 
         for (String str : pluginManager.getArray()) {
             Plugin plugin = pluginManager.load(str, PLUGINS_DIR + str + File.separator + str);
