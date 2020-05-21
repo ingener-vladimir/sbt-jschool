@@ -57,7 +57,6 @@ public class ScalableThreadPool implements ThreadPool {
             Thread thread = new Thread(new TaskWorker(workQueue, false));
             threadLinkedList.add(thread);
             thread.start();
-
         }
     }
 

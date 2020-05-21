@@ -3,6 +3,9 @@ package com.sbt.jschool.lesson11;
 import com.sbt.jschool.lesson11.interfaces.ThreadPool;
 import com.sbt.jschool.lesson11.pool.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         ThreadPool executor = new FixedThreadPool(4);

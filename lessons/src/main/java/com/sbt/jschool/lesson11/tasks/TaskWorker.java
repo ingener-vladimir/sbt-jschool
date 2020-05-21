@@ -40,6 +40,7 @@ public class TaskWorker implements Runnable {
                     try {
                         workQueue.wait();
                     } catch (InterruptedException ignored) {
+                        Thread.currentThread().interrupt();
                         System.out.println("Thread " + Thread.currentThread().getName() + " interrupted");
                     }
                 }
